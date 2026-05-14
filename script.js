@@ -7,7 +7,10 @@ const publicationFilters = document.querySelectorAll("[data-publication-filter]"
 const publicationGroups = document.querySelectorAll("[data-publication-group]");
 const peopleFilters = document.querySelectorAll("[data-people-filter]");
 const peopleGroups = document.querySelectorAll("[data-people-group]");
+const languageButtons = document.querySelectorAll("[data-lang-button]");
+const translatedElements = document.querySelectorAll("[data-i18n]");
 const viewNames = new Set(Array.from(viewSections, (section) => section.getAttribute("data-view")));
+const supportedLanguages = new Set(["en", "ko"]);
 
 toggle?.addEventListener("click", () => {
   const isOpen = nav.classList.toggle("is-open");
@@ -74,6 +77,48 @@ const updateHeader = () => {
   header?.classList.toggle("is-scrolled", window.scrollY > 8);
 };
 
+const setLanguage = (language) => {
+  const selectedLanguage = supportedLanguages.has(language) ? language : "en";
+
+  document.documentElement.lang = selectedLanguage;
+
+  translatedElements.forEach((element) => {
+    const translatedText = element.getAttribute(`data-${selectedLanguage}`);
+
+    if (translatedText) {
+      element.textContent = translatedText;
+    }
+  });
+
+  languageButtons.forEach((button) => {
+    const isSelected = button.getAttribute("data-lang-button") === selectedLanguage;
+
+    button.classList.toggle("is-active", isSelected);
+    button.setAttribute("aria-pressed", String(isSelected));
+  });
+
+  try {
+    localStorage.setItem("smai-language", selectedLanguage);
+  } catch {
+    // Language selection still works for the current page when storage is unavailable.
+  }
+};
+
+languageButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    setLanguage(button.getAttribute("data-lang-button"));
+  });
+});
+
+let savedLanguage = "en";
+
+try {
+  savedLanguage = localStorage.getItem("smai-language") || "en";
+} catch {
+  savedLanguage = "en";
+}
+
+setLanguage(savedLanguage);
 renderView(getViewFromHash());
 updateHeader();
 window.addEventListener("scroll", updateHeader, { passive: true });

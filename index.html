@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap"
       rel="stylesheet"
     >
-    <link rel="stylesheet" href="styles.css?v=20260514b">
+    <link rel="stylesheet" href="styles.css?v=20260514f">
   </head>
   <body>
     <header class="site-header" data-header>
@@ -31,13 +31,16 @@
         <span></span>
       </button>
       <nav class="site-nav" id="site-nav" data-nav>
-        <a href="#research">Research</a>
-        <a href="#projects">Projects</a>
-        <a href="#publications">Publications</a>
-        <a href="#people">People</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
+        <a href="#research" data-i18n data-en="Research" data-ko="연구">Research</a>
+        <a href="#projects" data-i18n data-en="Projects" data-ko="과제">Projects</a>
+        <a href="#publications" data-i18n data-en="Publications" data-ko="논문">Publications</a>
+        <a href="#people" data-i18n data-en="People" data-ko="구성원">People</a>
+        <a href="#news" data-i18n data-en="News" data-ko="소식">News</a>
       </nav>
+      <div class="language-toggle" aria-label="Language selection">
+        <button class="is-active" type="button" data-lang-button="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang-button="ko" aria-pressed="false">KO</button>
+      </div>
     </header>
 
     <main>
@@ -48,64 +51,72 @@
             <h2>SMAI Lab</h2>
             <dl>
               <div>
-                <dt>Principal Investigator</dt>
-                <dd>Prof. Min-Suk Kim</dd>
+                <dt data-i18n data-en="Principal Investigator" data-ko="지도교수">Principal Investigator</dt>
+                <dd data-i18n data-en="Prof. Min-Suk Kim" data-ko="김민석 교수">Prof. Min-Suk Kim</dd>
               </div>
               <div>
-                <dt>Affiliation</dt>
-                <dd>Sangmyung University</dd>
+                <dt data-i18n data-en="Affiliation" data-ko="소속">Affiliation</dt>
+                <dd data-i18n data-en="Sangmyung University" data-ko="상명대학교">Sangmyung University</dd>
               </div>
               <div>
-                <dt>Student Lab</dt>
-                <dd>Hakmugwan 405</dd>
+                <dt data-i18n data-en="Student Lab" data-ko="학생 연구실">Student Lab</dt>
+                <dd data-i18n data-en="Hakmugwan 405" data-ko="학무관 405호">Hakmugwan 405</dd>
               </div>
             </dl>
             <ul>
-              <li>Reinforcement learning and decision-making</li>
-              <li>Deep learning for vision and time-series data</li>
-              <li>Applied AI systems in simulation and field data</li>
+              <li data-i18n data-en="Reinforcement learning and decision-making" data-ko="강화학습과 의사결정">Reinforcement learning and decision-making</li>
+              <li data-i18n data-en="Deep learning for vision and time-series data" data-ko="영상 및 시계열 데이터를 위한 딥러닝">Deep learning for vision and time-series data</li>
+              <li data-i18n data-en="Applied AI systems in simulation and field data" data-ko="시뮬레이션 및 현장 데이터를 위한 응용 AI 시스템">Applied AI systems in simulation and field data</li>
             </ul>
           </div>
         </div>
         <div class="hero-content">
           <p class="eyebrow">SMAI Lab</p>
-          <h1>Artificial intelligence methods for applied systems.</h1>
-          <p>
+          <h1 data-i18n data-en="Artificial intelligence methods for applied systems." data-ko="인공지능 방법론과 응용 시스템을 연구합니다.">Artificial intelligence methods for applied systems.</h1>
+          <p
+            data-i18n
+            data-en="SMAI Lab studies reinforcement learning, deep learning, generative models, and representation learning, and applies these methods to simulation, vision and time-series data, industrial systems, and robotic control."
+            data-ko="SMAI Lab은 강화학습, 딥러닝, 생성형 모델, 표현학습 등 인공지능 방법론을 연구하고, 이를 시뮬레이션, 영상·시계열 데이터, 산업 시스템, 로봇 제어 등 다양한 응용 환경에 적용합니다."
+          >
             SMAI Lab studies reinforcement learning, deep learning, generative models, and representation
             learning, and applies these methods to simulation, vision and time-series data, industrial
             systems, and robotic control.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#research">Research Areas</a>
-            <a class="button secondary" href="#contact">Contact</a>
+            <a class="button primary" href="#research" data-i18n data-en="Research Areas" data-ko="연구 분야">Research Areas</a>
+            <a class="button secondary" href="#people" data-i18n data-en="People & Location" data-ko="구성원 및 위치">People & Location</a>
           </div>
         </div>
       </section>
 
       <section class="section intro-band" aria-label="Lab summary" data-view="home">
         <div class="metric">
-          <strong>Methods</strong>
+          <strong data-i18n data-en="Methods" data-ko="방법론">Methods</strong>
           <span>RL · DL · Generative AI</span>
         </div>
         <div class="metric">
-          <strong>Data</strong>
+          <strong data-i18n data-en="Data" data-ko="데이터">Data</strong>
           <span>Vision · Time Series · Simulation</span>
         </div>
         <div class="metric">
-          <strong>Systems</strong>
+          <strong data-i18n data-en="Systems" data-ko="시스템">Systems</strong>
           <span>Robotics · Industry · Security</span>
         </div>
         <div class="metric">
           <strong>405</strong>
-          <span>Student Lab, Hakmugwan</span>
+          <span data-i18n data-en="Student Lab, Hakmugwan" data-ko="학생 연구실, 학무관">Student Lab, Hakmugwan</span>
         </div>
       </section>
 
       <section class="section research-view" id="research" data-view="research">
         <div class="section-heading">
           <p class="eyebrow">Research</p>
-          <h2>Research Areas</h2>
-          <p>
+          <h2 data-i18n data-en="Research Areas" data-ko="연구 분야">Research Areas</h2>
+          <p
+            data-i18n
+            data-en="SMAI Lab develops AI methods for decision-making, perception, representation, and applied intelligent systems. The lab works across algorithms, data-driven modeling, and real-world applications."
+            data-ko="SMAI Lab은 의사결정, 인식, 표현학습, 응용 지능 시스템을 위한 AI 방법론을 연구합니다. 알고리즘, 데이터 기반 모델링, 실제 시스템 응용을 함께 다룹니다."
+          >
             SMAI Lab develops AI methods for decision-making, perception, representation, and applied
             intelligent systems. The lab works across algorithms, data-driven modeling, and real-world
             applications.
@@ -115,7 +126,7 @@
           <article class="research-card">
             <span class="card-index">01</span>
             <h3>Learning & Decision</h3>
-            <p>We study reinforcement learning, self-play, actor-critic methods, and policy optimization for complex decision-making environments.</p>
+            <p data-i18n data-en="We study reinforcement learning, self-play, actor-critic methods, and policy optimization for complex decision-making environments." data-ko="복잡한 환경에서의 의사결정을 위해 강화학습, Self-Play, Actor-Critic, 정책 최적화 방법을 연구합니다.">We study reinforcement learning, self-play, actor-critic methods, and policy optimization for complex decision-making environments.</p>
             <div class="tag-list">
               <span>Reinforcement Learning</span>
               <span>Self-Play</span>
@@ -125,7 +136,7 @@
           <article class="research-card">
             <span class="card-index">02</span>
             <h3>Anomaly & Perception</h3>
-            <p>We develop deep learning models that interpret time-series, vision, sensor, and multimodal data for perception and system-state understanding.</p>
+            <p data-i18n data-en="We develop deep learning models that interpret time-series, vision, sensor, and multimodal data for perception and system-state understanding." data-ko="시계열, 영상, 센서, 멀티모달 데이터를 해석해 시스템 상태와 데이터 패턴을 인식하는 딥러닝 모델을 개발합니다.">We develop deep learning models that interpret time-series, vision, sensor, and multimodal data for perception and system-state understanding.</p>
             <div class="tag-list">
               <span>Vision</span>
               <span>Time Series</span>
@@ -135,7 +146,7 @@
           <article class="research-card">
             <span class="card-index">03</span>
             <h3>Generative & Representation</h3>
-            <p>We investigate generative models, prompt automation, knowledge transfer, and representation learning for data-limited environments.</p>
+            <p data-i18n data-en="We investigate generative models, prompt automation, knowledge transfer, and representation learning for data-limited environments." data-ko="제한된 데이터 환경을 고려해 생성형 모델, 프롬프트 자동화, 지식전이, 표현학습을 연구합니다.">We investigate generative models, prompt automation, knowledge transfer, and representation learning for data-limited environments.</p>
             <div class="tag-list">
               <span>Generative Models</span>
               <span>Representation</span>
@@ -145,7 +156,7 @@
           <article class="research-card">
             <span class="card-index">04</span>
             <h3>Applied AI Systems</h3>
-            <p>We apply AI methods to simulation, industrial diagnostics, robotic control, surveillance, and security-related systems.</p>
+            <p data-i18n data-en="We apply AI methods to simulation, industrial diagnostics, robotic control, surveillance, and security-related systems." data-ko="시뮬레이션, 산업 시스템 진단, 로봇 제어, 감시 및 보안 관련 시스템에 AI 방법론을 적용합니다.">We apply AI methods to simulation, industrial diagnostics, robotic control, surveillance, and security-related systems.</p>
             <div class="tag-list">
               <span>Simulation</span>
               <span>Diagnostics</span>
@@ -158,14 +169,13 @@
       <section class="section split-section project-view" id="projects" data-view="projects">
         <div class="section-heading compact">
           <p class="eyebrow">Projects</p>
-          <h2>Research Projects</h2>
-          <p>Selected lab projects on AI methods and applied intelligent systems.</p>
+          <h2 data-i18n data-en="Research Projects" data-ko="주요 과제">Research Projects</h2>
         </div>
         <div class="project-list">
           <article>
             <span>01</span>
-            <h3>[3/3] Multi-Agent Self-Play Reinforcement Learning for Cyber Attack Response Planning</h3>
-            <p>
+            <h3 data-i18n data-en="[3/3] Multi-Agent Self-Play Reinforcement Learning for Cyber Attack Response Planning" data-ko="[3/3] 사이버 공격 대응 수립을 위한 다중에이전트 기반 Self-Play 강화학습 연구개발">[3/3] Multi-Agent Self-Play Reinforcement Learning for Cyber Attack Response Planning</h3>
+            <p data-i18n data-en="Ministry of Science and ICT · Mar. 2024 - Feb. 2025" data-ko="과학기술정보통신부 · 2024년 03월 - 2025년 02월">
               Ministry of Science and ICT · Mar. 2024 - Feb. 2025
             </p>
             <div class="tag-list">
@@ -176,8 +186,8 @@
           </article>
           <article>
             <span>02</span>
-            <h3>[3/6] Core Technologies for Self-Evolving AI-Based Cyber Attack-Defense Systems</h3>
-            <p>
+            <h3 data-i18n data-en="[3/6] Core Technologies for Self-Evolving AI-Based Cyber Attack-Defense Systems" data-ko="[3/6] 자가진화형 AI 기반 사이버 공방 핵심원천기술 개발">[3/6] Core Technologies for Self-Evolving AI-Based Cyber Attack-Defense Systems</h3>
+            <p data-i18n data-en="Ministry of Science and ICT · 2024 - Dec. 2024" data-ko="과학기술정보통신부 · 2024년 - 2024년 12월">
               Ministry of Science and ICT · 2024 - Dec. 2024
             </p>
             <div class="tag-list">
@@ -188,8 +198,8 @@
           </article>
           <article>
             <span>03</span>
-            <h3>[3/8] Remote Diagnostics for Secondary-System Equipment Using Ultra-Low-Power Wireless Monitoring</h3>
-            <p>
+            <h3 data-i18n data-en="[3/8] Remote Diagnostics for Secondary-System Equipment Using Ultra-Low-Power Wireless Monitoring" data-ko="[3/8] 초저전력 무선감시 기반 이차계통기기 원격진단기술 개발">[3/8] Remote Diagnostics for Secondary-System Equipment Using Ultra-Low-Power Wireless Monitoring</h3>
+            <p data-i18n data-en="Ministry of Science and ICT · 2024 - Dec. 2024" data-ko="과학기술정보통신부 · 2024년 - 2024년 12월">
               Ministry of Science and ICT · 2024 - Dec. 2024
             </p>
             <div class="tag-list">
@@ -204,15 +214,15 @@
       <section class="section split-section publication-view" id="publications" data-view="publications">
         <div class="section-heading compact">
           <p class="eyebrow">Publications</p>
-          <h2>Publications & Awards</h2>
+          <h2 data-i18n data-en="Publications & Awards" data-ko="논문 및 성과">Publications & Awards</h2>
         </div>
         <div class="publication-shell">
           <div class="publication-tabs" aria-label="Publication categories">
-            <button class="is-active" type="button" data-publication-filter="all" aria-pressed="true">All</button>
+            <button class="is-active" type="button" data-publication-filter="all" aria-pressed="true" data-i18n data-en="All" data-ko="전체">All</button>
             <button type="button" data-publication-filter="sci" aria-pressed="false">SCI/SCIE</button>
             <button type="button" data-publication-filter="kci" aria-pressed="false">KCI</button>
-            <button type="button" data-publication-filter="conference" aria-pressed="false">Conference</button>
-            <button type="button" data-publication-filter="awards" aria-pressed="false">Awards</button>
+            <button type="button" data-publication-filter="conference" aria-pressed="false" data-i18n data-en="Conference" data-ko="학술대회">Conference</button>
+            <button type="button" data-publication-filter="awards" aria-pressed="false" data-i18n data-en="Awards" data-ko="수상">Awards</button>
           </div>
           <div class="publication-list">
             <div class="publication-group" data-publication-group="sci">
@@ -375,122 +385,193 @@
       <section class="section people-view" id="people" data-view="people">
         <div class="section-heading">
           <p class="eyebrow">People</p>
-          <h2>Members</h2>
-          <p>Members of SMAI Lab are listed by role.</p>
+          <h2 data-i18n data-en="Members" data-ko="구성원">Members</h2>
         </div>
-        <div class="people-tabs" aria-label="People categories">
-          <button class="is-active" type="button" data-people-filter="all" aria-pressed="true">All</button>
-          <button type="button" data-people-filter="faculty" aria-pressed="false">Professor</button>
-          <button type="button" data-people-filter="graduate" aria-pressed="false">Graduate</button>
-          <button type="button" data-people-filter="undergraduate" aria-pressed="false">Undergraduate</button>
-        </div>
-        <div class="people-list">
-          <article class="person-card lead" data-people-group="faculty">
-            <div class="avatar">PI</div>
-            <div>
-              <p>Professor</p>
-              <h3>김민석</h3>
-              <span>Professor Lab · Hannuri Hall I508B</span>
-              <em>AI methods and applied intelligent systems</em>
+        <div class="people-layout">
+          <div class="people-main">
+            <div class="people-tabs" aria-label="People categories">
+              <button class="is-active" type="button" data-people-filter="all" aria-pressed="true" data-i18n data-en="All" data-ko="전체">All</button>
+              <button type="button" data-people-filter="faculty" aria-pressed="false" data-i18n data-en="Professor" data-ko="교수">Professor</button>
+              <button type="button" data-people-filter="graduate" aria-pressed="false" data-i18n data-en="Graduate" data-ko="대학원">Graduate</button>
+              <button type="button" data-people-filter="undergraduate" aria-pressed="false" data-i18n data-en="Undergraduate" data-ko="학부생">Undergraduate</button>
             </div>
-          </article>
-          <article class="person-card" data-people-group="graduate">
-            <div class="avatar">PhD</div>
-            <div>
-              <p>Ph.D. Student</p>
-              <h3>김정현</h3>
-              <span>Ph.D. Student · Student Lab, Hakmugwan 405</span>
-              <em>Reinforcement learning and system optimization</em>
+            <div class="people-list">
+              <article class="person-card lead" data-people-group="faculty">
+                <div class="avatar">PI</div>
+                <div>
+                  <p data-i18n data-en="Professor" data-ko="교수">Professor</p>
+                  <h3>김민석</h3>
+                  <span data-i18n data-en="Professor Lab · Hannuri Hall I508B" data-ko="교수님 연구실 · 한누리관 I508B">Professor Lab · Hannuri Hall I508B</span>
+                  <em data-i18n data-en="AI methods and applied intelligent systems" data-ko="AI 방법론 및 응용 지능 시스템">AI methods and applied intelligent systems</em>
+                </div>
+              </article>
+              <article class="person-card" data-people-group="graduate">
+                <div class="avatar">PhD</div>
+                <div>
+                  <p data-i18n data-en="Ph.D. Student" data-ko="박사과정">Ph.D. Student</p>
+                  <h3>김정현</h3>
+                  <span data-i18n data-en="Ph.D. Student · Student Lab, Hakmugwan 405" data-ko="박사과정 · 학생 연구실 학무관 405호">Ph.D. Student · Student Lab, Hakmugwan 405</span>
+                  <em data-i18n data-en="Reinforcement learning and system optimization" data-ko="강화학습 및 시스템 최적화">Reinforcement learning and system optimization</em>
+                </div>
+              </article>
+              <article class="person-card" data-people-group="graduate">
+                <div class="avatar">MS</div>
+                <div>
+                  <p data-i18n data-en="M.S. Student" data-ko="석사과정">M.S. Student</p>
+                  <h3>최용훈</h3>
+                  <span data-i18n data-en="M.S. Student · Student Lab, Hakmugwan 405" data-ko="석사과정 · 학생 연구실 학무관 405호">M.S. Student · Student Lab, Hakmugwan 405</span>
+                  <em data-i18n data-en="Deep learning, vision, and time-series data" data-ko="딥러닝, 영상 및 시계열 데이터">Deep learning, vision, and time-series data</em>
+                </div>
+              </article>
+              <article class="person-card" data-people-group="undergraduate">
+                <div class="avatar">UG</div>
+                <div>
+                  <p data-i18n data-en="Undergraduate Researcher" data-ko="학부 연구생">Undergraduate Researcher</p>
+                  <h3>김민서</h3>
+                  <span data-i18n data-en="Undergraduate Researcher · Student Lab, Hakmugwan 405" data-ko="학부 연구생 · 학생 연구실 학무관 405호">Undergraduate Researcher · Student Lab, Hakmugwan 405</span>
+                  <em data-i18n data-en="Cybersecurity simulation and applied AI" data-ko="사이버보안 시뮬레이션 및 응용 AI">Cybersecurity simulation and applied AI</em>
+                </div>
+              </article>
+              <article class="person-card" data-people-group="undergraduate">
+                <div class="avatar">UG</div>
+                <div>
+                  <p data-i18n data-en="Undergraduate Researcher" data-ko="학부 연구생">Undergraduate Researcher</p>
+                  <h3>박수빈</h3>
+                  <span data-i18n data-en="Undergraduate Researcher · Student Lab, Hakmugwan 405" data-ko="학부 연구생 · 학생 연구실 학무관 405호">Undergraduate Researcher · Student Lab, Hakmugwan 405</span>
+                  <em data-i18n data-en="Applied AI systems" data-ko="응용 AI 시스템">Applied AI systems</em>
+                </div>
+              </article>
             </div>
-          </article>
-          <article class="person-card" data-people-group="graduate">
-            <div class="avatar">MS</div>
-            <div>
-              <p>M.S. Student</p>
-              <h3>최용훈</h3>
-              <span>M.S. Student · Student Lab, Hakmugwan 405</span>
-              <em>Deep learning, vision, and time-series data</em>
+          </div>
+          <aside class="lab-map-panel" aria-label="Lab locations">
+            <h3 data-i18n data-en="Lab Locations & Contact" data-ko="연구실 위치 및 연락처">Lab Locations & Contact</h3>
+            <div class="map-card contact-card">
+              <div>
+                <span data-i18n data-en="Email" data-ko="이메일">Email</span>
+                <a href="mailto:minsuk.kim@smu.ac.kr">minsuk.kim@smu.ac.kr</a>
+              </div>
+              <div>
+                <span data-i18n data-en="Phone" data-ko="연락처">Phone</span>
+                <p>041-550-5113</p>
+              </div>
             </div>
-          </article>
-          <article class="person-card" data-people-group="undergraduate">
-            <div class="avatar">UG</div>
-            <div>
-              <p>Undergraduate Researcher</p>
-              <h3>김민서</h3>
-              <span>Undergraduate Researcher · Student Lab, Hakmugwan 405</span>
-              <em>Cybersecurity simulation and applied AI</em>
+            <div class="map-card">
+              <div>
+                <span data-i18n data-en="Professor Lab" data-ko="교수님 연구실">Professor Lab</span>
+                <p data-i18n data-en="Hannuri Hall I508B" data-ko="한누리관 I508B">Hannuri Hall I508B</p>
+              </div>
+              <iframe
+                title="Professor Lab map"
+                src="https://www.google.com/maps?q=%EC%83%81%EB%AA%85%EB%8C%80%ED%95%99%EA%B5%90%20%EC%B2%9C%EC%95%88%EC%BA%A0%ED%8D%BC%EC%8A%A4%20%ED%95%9C%EB%88%84%EB%A6%AC%EA%B4%80&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
-          </article>
-          <article class="person-card" data-people-group="undergraduate">
-            <div class="avatar">UG</div>
-            <div>
-              <p>Undergraduate Researcher</p>
-              <h3>박수빈</h3>
-              <span>Undergraduate Researcher · Student Lab, Hakmugwan 405</span>
-              <em>Applied AI systems</em>
+            <div class="map-card">
+              <div>
+                <span data-i18n data-en="Student Lab" data-ko="학생 연구실">Student Lab</span>
+                <p data-i18n data-en="Hakmugwan 405" data-ko="학무관 405호">Hakmugwan 405</p>
+              </div>
+              <iframe
+                title="Student Lab map"
+                src="https://www.google.com/maps?q=%EC%83%81%EB%AA%85%EB%8C%80%ED%95%99%EA%B5%90%20%EC%B2%9C%EC%95%88%EC%BA%A0%ED%8D%BC%EC%8A%A4%20%ED%95%99%EB%AC%B4%EA%B4%80&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
-          </article>
+          </aside>
         </div>
       </section>
 
       <section class="section split-section news-view" id="news" data-view="news">
         <div class="section-heading compact">
           <p class="eyebrow">News</p>
-          <h2>News</h2>
-          <p>Recent publications, conference presentations, and awards from SMAI Lab.</p>
+          <h2 data-i18n data-en="News" data-ko="소식">News</h2>
         </div>
         <div class="news-list">
           <article>
             <time datetime="2025-12-09">2025.12.09</time>
-            <p>
+            <p
+              data-i18n
+              data-en="Sangmyung University media reported the Best Paper Award received by Yong-Hoon Choi and Minseo Kim at the 6th Korea Artificial Intelligence Conference undergraduate paper competition."
+              data-ko="상명대학교 학내언론사가 최용훈, 김민서 학생의 제6회 한국 인공지능 학술대회 학부 논문 경진대회 우수논문상 수상 소식을 보도했습니다."
+            >
               Sangmyung University media reported the Best Paper Award received by Yong-Hoon Choi
               and Minseo Kim at the 6th Korea Artificial Intelligence Conference undergraduate paper competition.
             </p>
           </article>
           <article>
             <time datetime="2025-11-27">2025.11.27</time>
-            <p>
+            <p
+              data-i18n
+              data-en="The undergraduate research work on image-texture-based sensing data analysis was introduced in external media as a Best Paper Award achievement."
+              data-ko="SMAI Lab 학부 연구팀의 이미지 텍스처 특징 기반 센싱 데이터 연구가 한국 인공지능 학술대회 우수논문상 수상 성과로 외부 언론에 소개됐습니다."
+            >
               The undergraduate research work on image-texture-based sensing data analysis was introduced
               in external media as a Best Paper Award achievement.
             </p>
           </article>
           <article>
             <time datetime="2025-09">2025.09</time>
-            <p>
+            <p
+              data-i18n
+              data-en="SMAI Lab presented research on asynchronous self-play for cyber attack-defense simulation and sensing-data analysis at the 2025 Korea Artificial Intelligence Conference."
+              data-ko="한국통신학회 2025 한국 인공지능 학술대회에서 비동기식 Self-Play 사이버 공방 연구와 센싱 데이터 연구 성과를 발표했습니다."
+            >
               SMAI Lab presented research on asynchronous self-play for cyber attack-defense simulation
               and sensing-data analysis at the 2025 Korea Artificial Intelligence Conference.
             </p>
           </article>
           <article>
             <time datetime="2025-02-11">2025.02.11</time>
-            <p>
+            <p
+              data-i18n
+              data-en="A reinforcement-learning-based system optimization study by SMAI Lab members was published in Applied Sciences."
+              data-ko="SMAI Lab 구성원이 참여한 강화학습 기반 시스템 최적화 연구가 Applied Sciences에 게재됐습니다."
+            >
               A reinforcement-learning-based system optimization study by SMAI Lab members was published
               in Applied Sciences.
             </p>
           </article>
           <article>
             <time datetime="2024-09">2024.09</time>
-            <p>
+            <p
+              data-i18n
+              data-en="SMAI Lab presented work on CyberBattleSim-based defense strategies, self-play cyber simulation, and power-plant time-series analysis at the 2024 Korea Artificial Intelligence Conference."
+              data-ko="한국통신학회 2024 한국 인공지능 학술대회에서 CyberBattleSim 방어 전략, Self-Play 사이버 공방, 발전소 시계열 연구를 발표했습니다."
+            >
               SMAI Lab presented work on CyberBattleSim-based defense strategies, self-play cyber
               simulation, and power-plant time-series analysis at the 2024 Korea Artificial Intelligence Conference.
             </p>
           </article>
           <article>
             <time datetime="2024-08-01">2024.08.01</time>
-            <p>
+            <p
+              data-i18n
+              data-en="A generative anomaly-detection study for leak-event diagnosis in power plants was published in Sensors."
+              data-ko="발전소 누출 진단을 위한 생성형 이상탐지 연구가 Sensors에 게재됐습니다."
+            >
               A generative anomaly-detection study for leak-event diagnosis in power plants was published in Sensors.
             </p>
           </article>
           <article>
             <time datetime="2024-07">2024.07</time>
-            <p>
+            <p
+              data-i18n
+              data-en="SMAI Lab presented research on reinforcement-learning agents for cyber simulation and MuJoCo-based policy analysis at the Korea Society of Computer Information summer conference."
+              data-ko="한국컴퓨터정보학회 하계학술대회에서 사이버 공방 강화학습 에이전트 연구와 MuJoCo 기반 강화학습 정책분석 연구를 발표했습니다."
+            >
               SMAI Lab presented research on reinforcement-learning agents for cyber simulation and
               MuJoCo-based policy analysis at the Korea Society of Computer Information summer conference.
             </p>
           </article>
           <article>
             <time datetime="2023-12">2023.12</time>
-            <p>
+            <p
+              data-i18n
+              data-en="SMAI Lab gave an oral presentation at MobiSec 2023 in Okinawa, Japan, and the paper received the NSR Best Paper Award."
+              data-ko="일본 오키나와에서 열린 MobiSec 2023에서 강화학습 기반 사이버 공격·방어 전략 연구를 구두 발표했으며, 해당 논문이 NSR Best Paper로 선정됐습니다."
+            >
               SMAI Lab gave an oral presentation at MobiSec 2023 in Okinawa, Japan, and the paper
               received the NSR Best Paper Award.
             </p>
@@ -498,36 +579,12 @@
         </div>
       </section>
 
-      <section class="section contact-section contact-view" id="contact" data-view="contact">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Contact</h2>
-        </div>
-        <div class="contact-box">
-          <div class="contact-item primary">
-            <span>Email</span>
-            <a href="mailto:minsuk.kim@smu.ac.kr">minsuk.kim@smu.ac.kr</a>
-          </div>
-          <div class="contact-item">
-            <span>Professor Lab</span>
-            <p>Hannuri Hall I508B, Cheonan Campus, Sangmyung University</p>
-          </div>
-          <div class="contact-item">
-            <span>Student Lab</span>
-            <p>Hakmugwan 405, Cheonan Campus, Sangmyung University</p>
-          </div>
-          <div class="contact-item">
-            <span>Phone</span>
-            <p>041-550-5113</p>
-          </div>
-        </div>
-      </section>
     </main>
 
     <footer class="site-footer">
       <p>© 2026 SMAI Lab, Sangmyung University. All rights reserved.</p>
     </footer>
 
-    <script src="script.js?v=20260514b"></script>
+    <script src="script.js?v=20260514f"></script>
   </body>
 </html>
