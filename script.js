@@ -5,6 +5,8 @@ const viewSections = document.querySelectorAll("[data-view]");
 const viewLinks = document.querySelectorAll('a[href^="#"]');
 const publicationFilters = document.querySelectorAll("[data-publication-filter]");
 const publicationGroups = document.querySelectorAll("[data-publication-group]");
+const peopleFilters = document.querySelectorAll("[data-people-filter]");
+const peopleGroups = document.querySelectorAll("[data-people-group]");
 const viewNames = new Set(Array.from(viewSections, (section) => section.getAttribute("data-view")));
 
 toggle?.addEventListener("click", () => {
@@ -89,6 +91,24 @@ publicationFilters.forEach((button) => {
 
     publicationGroups.forEach((group) => {
       const category = group.getAttribute("data-publication-group");
+      group.hidden = selected !== "all" && selected !== category;
+    });
+  });
+});
+
+peopleFilters.forEach((button) => {
+  button.addEventListener("click", () => {
+    const selected = button.getAttribute("data-people-filter");
+
+    peopleFilters.forEach((filter) => {
+      const isSelected = filter === button;
+
+      filter.classList.toggle("is-active", isSelected);
+      filter.setAttribute("aria-pressed", String(isSelected));
+    });
+
+    peopleGroups.forEach((group) => {
+      const category = group.getAttribute("data-people-group");
       group.hidden = selected !== "all" && selected !== category;
     });
   });
