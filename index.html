@@ -41,19 +41,29 @@
     </header>
 
     <main>
-      <section class="hero" id="home">
+      <section class="hero" id="home" data-view="home">
         <div class="hero-visual" aria-hidden="true">
-          <div class="identity-panel">
-            <div class="identity-mark">
+          <div class="research-map">
+            <div class="map-grid"></div>
+            <div class="map-core">
               <span>SMAI</span>
-              <strong>Sangmyung Artificial Intelligence Laboratory</strong>
+              <strong>AI Methods for Applied Systems</strong>
             </div>
-            <div class="identity-tags">
-              <span>Decision Learning</span>
-              <span>Anomaly Intelligence</span>
-              <span>Representation AI</span>
-              <span>Applied Systems</span>
+            <div class="map-node node-method">
+              <span>Methods</span>
+              <strong>RL · DL · Generative AI</strong>
             </div>
+            <div class="map-node node-data">
+              <span>Data</span>
+              <strong>Vision · Time Series · Simulation</strong>
+            </div>
+            <div class="map-node node-system">
+              <span>Systems</span>
+              <strong>Robotics · Industry · Security</strong>
+            </div>
+            <div class="map-line line-a"></div>
+            <div class="map-line line-b"></div>
+            <div class="map-line line-c"></div>
           </div>
         </div>
         <div class="hero-content">
@@ -71,18 +81,18 @@
         </div>
       </section>
 
-      <section class="section intro-band" aria-label="연구실 요약">
+      <section class="section intro-band" aria-label="연구실 요약" data-view="home">
         <div class="metric">
-          <strong>RL</strong>
-          <span>Decision Learning</span>
+          <strong>Methods</strong>
+          <span>RL · DL · Generative AI</span>
         </div>
         <div class="metric">
-          <strong>AD</strong>
-          <span>Anomaly Intelligence</span>
+          <strong>Data</strong>
+          <span>Vision · Time Series · Simulation</span>
         </div>
         <div class="metric">
-          <strong>REP</strong>
-          <span>Representation AI</span>
+          <strong>Systems</strong>
+          <span>Robotics · Industry · Security</span>
         </div>
         <div class="metric">
           <strong>405</strong>
@@ -90,7 +100,7 @@
         </div>
       </section>
 
-      <section class="section" id="research">
+      <section class="section research-view" id="research" data-view="research">
         <div class="section-heading">
           <p class="eyebrow">Research</p>
           <h2>연구 축</h2>
@@ -104,29 +114,50 @@
             <span class="card-index">01</span>
             <h3>Learning & Decision</h3>
             <p>강화학습, Self-Play, Actor-Critic, 정책 최적화를 통해 복잡한 환경에서의 의사결정 방법을 연구합니다.</p>
+            <div class="tag-list">
+              <span>Reinforcement Learning</span>
+              <span>Self-Play</span>
+              <span>Policy Optimization</span>
+            </div>
           </article>
           <article class="research-card">
             <span class="card-index">02</span>
             <h3>Anomaly & Perception</h3>
             <p>시계열, 영상, 센서, 멀티모달 데이터를 해석해 이상 징후와 시스템 상태를 인식하는 딥러닝 모델을 개발합니다.</p>
+            <div class="tag-list">
+              <span>Vision</span>
+              <span>Time Series</span>
+              <span>Multi-Modal</span>
+            </div>
           </article>
           <article class="research-card">
             <span class="card-index">03</span>
             <h3>Generative & Representation</h3>
             <p>생성형 이상탐지, 프롬프트 자동화, 지식전이, 표현학습을 활용해 제한된 데이터 환경의 AI 성능을 높입니다.</p>
+            <div class="tag-list">
+              <span>Generative Models</span>
+              <span>Representation</span>
+              <span>Knowledge Transfer</span>
+            </div>
           </article>
           <article class="research-card">
             <span class="card-index">04</span>
             <h3>Applied AI Systems</h3>
             <p>사이버 공방 시뮬레이션, 원자력·발전 설비 진단, 로봇 제어, 감시·보안 시스템 등 실제 문제에 AI를 적용합니다.</p>
+            <div class="tag-list">
+              <span>Simulation</span>
+              <span>Diagnostics</span>
+              <span>Control</span>
+            </div>
           </article>
         </div>
       </section>
 
-      <section class="section split-section" id="projects">
+      <section class="section split-section project-view" id="projects" data-view="projects">
         <div class="section-heading compact">
           <p class="eyebrow">Projects</p>
           <h2>주요 과제</h2>
+          <p>연구실에서 수행한 AI 방법론 기반 응용 연구 과제입니다.</p>
         </div>
         <div class="project-list">
           <article>
@@ -135,6 +166,11 @@
             <p>
               과학기술정보통신부 · 2024년 03월 - 2025년 02월
             </p>
+            <div class="tag-list">
+              <span>Multi-Agent RL</span>
+              <span>Self-Play</span>
+              <span>Simulation</span>
+            </div>
           </article>
           <article>
             <span>02</span>
@@ -142,6 +178,11 @@
             <p>
               과학기술정보통신부 · 2024년 - 2024년 12월
             </p>
+            <div class="tag-list">
+              <span>Adaptive AI</span>
+              <span>Attack-Defense</span>
+              <span>Applied RL</span>
+            </div>
           </article>
           <article>
             <span>03</span>
@@ -149,17 +190,30 @@
             <p>
               과학기술정보통신부 · 2024년 - 2024년 12월
             </p>
+            <div class="tag-list">
+              <span>Remote Diagnostics</span>
+              <span>Time Series</span>
+              <span>Industrial AI</span>
+            </div>
           </article>
         </div>
       </section>
 
-      <section class="section split-section" id="publications">
+      <section class="section split-section publication-view" id="publications" data-view="publications">
         <div class="section-heading compact">
           <p class="eyebrow">Publications</p>
           <h2>논문 및 성과</h2>
         </div>
-        <div class="publication-list">
-          <div class="publication-group">
+        <div class="publication-shell">
+          <div class="publication-tabs" aria-label="논문 및 성과 분류">
+            <button class="is-active" type="button" data-publication-filter="all" aria-pressed="true">All</button>
+            <button type="button" data-publication-filter="sci" aria-pressed="false">SCI/SCIE</button>
+            <button type="button" data-publication-filter="kci" aria-pressed="false">KCI</button>
+            <button type="button" data-publication-filter="conference" aria-pressed="false">Conference</button>
+            <button type="button" data-publication-filter="awards" aria-pressed="false">Awards</button>
+          </div>
+          <div class="publication-list">
+            <div class="publication-group" data-publication-group="sci">
             <h3>SCI / SCIE</h3>
             <article>
               <span>2025 · Applied Sciences</span>
@@ -186,7 +240,7 @@
               <a href="https://doi.org/10.3390/s23229214" target="_blank" rel="noreferrer">DOI 10.3390/s23229214</a>
             </article>
           </div>
-          <div class="publication-group">
+            <div class="publication-group" data-publication-group="kci">
             <h3>KCI</h3>
             <article>
               <span>2025 · 멀티미디어학회논문지</span>
@@ -219,7 +273,7 @@
               <a href="https://doi.org/10.9717/kmms.2022.25.8.1049" target="_blank" rel="noreferrer">DOI 10.9717/kmms.2022.25.8.1049</a>
             </article>
           </div>
-          <div class="publication-group">
+            <div class="publication-group" data-publication-group="conference">
             <h3>Conference Proceedings</h3>
             <article>
               <span>2025 · 한국통신학회 인공지능 학술대회 논문집</span>
@@ -297,7 +351,7 @@
               <p>Yonghoon Choi, Hwanhee Jung, Minsuk Kim · Sangmyung University</p>
             </article>
           </div>
-          <div class="publication-group">
+            <div class="publication-group" data-publication-group="awards">
             <h3>Awards</h3>
             <article>
               <span>2025 · 한국통신학회</span>
@@ -312,10 +366,11 @@
               </p>
             </article>
           </div>
+          </div>
         </div>
       </section>
 
-      <section class="section" id="people">
+      <section class="section people-view" id="people" data-view="people">
         <div class="section-heading">
           <p class="eyebrow">People</p>
           <h2>구성원</h2>
@@ -328,6 +383,7 @@
               <p>Professor</p>
               <h3>김민석</h3>
               <span>Professor Lab · 한누리관 I508B</span>
+              <em>AI methods and applied intelligent systems</em>
             </div>
           </article>
           <article class="person-card">
@@ -336,6 +392,7 @@
               <p>Ph.D. Student</p>
               <h3>김정현</h3>
               <span>박사과정 · 학생 연구실 학무관 405호</span>
+              <em>Reinforcement learning and system optimization</em>
             </div>
           </article>
           <article class="person-card">
@@ -344,6 +401,7 @@
               <p>M.S. Student</p>
               <h3>최용훈</h3>
               <span>석사과정 · 학생 연구실 학무관 405호</span>
+              <em>Deep learning, vision, and time-series data</em>
             </div>
           </article>
           <article class="person-card">
@@ -352,6 +410,7 @@
               <p>Undergraduate Researcher</p>
               <h3>김민서</h3>
               <span>학부 연구생 · 학생 연구실 학무관 405호</span>
+              <em>Sensing data and image-based AI</em>
             </div>
           </article>
           <article class="person-card">
@@ -360,15 +419,17 @@
               <p>Undergraduate Researcher</p>
               <h3>박수빈</h3>
               <span>학부 연구생 · 학생 연구실 학무관 405호</span>
+              <em>Applied AI systems</em>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="section split-section" id="news">
+      <section class="section split-section news-view" id="news" data-view="news">
         <div class="section-heading compact">
           <p class="eyebrow">News</p>
           <h2>소식</h2>
+          <p>논문 게재, 학술대회 발표, 수상 소식을 시간순으로 정리했습니다.</p>
         </div>
         <div class="news-list">
           <article>
@@ -429,24 +490,34 @@
         </div>
       </section>
 
-      <section class="section contact-section" id="contact">
+      <section class="section contact-section contact-view" id="contact" data-view="contact">
         <div>
           <p class="eyebrow">Contact</p>
           <h2>연구 참여 및 공동연구 문의</h2>
         </div>
         <div class="contact-box">
-          <a href="mailto:minsuk.kim@smu.ac.kr">minsuk.kim@smu.ac.kr</a>
-          <p>교수님 연구실: 상명대학교 천안캠퍼스 한누리관 I508B</p>
-          <p>학생 연구실: 상명대학교 천안캠퍼스 학무관 405호</p>
-          <p>연락처 041-550-5113</p>
-          <p>대학원 진학, 학부 연구생, 공동연구 관련 문의를 받습니다.</p>
+          <div class="contact-item primary">
+            <span>Email</span>
+            <a href="mailto:minsuk.kim@smu.ac.kr">minsuk.kim@smu.ac.kr</a>
+          </div>
+          <div class="contact-item">
+            <span>Professor Lab</span>
+            <p>상명대학교 천안캠퍼스 한누리관 I508B</p>
+          </div>
+          <div class="contact-item">
+            <span>Student Lab</span>
+            <p>상명대학교 천안캠퍼스 학무관 405호</p>
+          </div>
+          <div class="contact-item">
+            <span>Phone</span>
+            <p>041-550-5113</p>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <p>© 2026 SMAI Lab, Sangmyung University. All rights reserved.</p>
-      <a href="#home">Back to top</a>
     </footer>
 
     <script src="script.js"></script>
