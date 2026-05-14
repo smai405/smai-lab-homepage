@@ -662,10 +662,10 @@ a {
 .person-card {
   display: grid;
   min-height: 132px;
-  grid-template-columns: 72px minmax(0, 1fr);
-  gap: 20px;
-  align-items: start;
-  padding: 22px 24px;
+  grid-template-columns: 128px minmax(0, 1fr);
+  gap: 24px;
+  align-items: center;
+  padding: 24px 26px;
 }
 
 .person-card.lead {
@@ -675,14 +675,21 @@ a {
 
 .avatar {
   display: grid;
-  width: 58px;
-  height: 58px;
+  width: 112px;
+  height: 136px;
   flex: 0 0 auto;
   place-items: center;
   border-radius: 2px;
   background: var(--blue);
   color: var(--white);
   font-weight: 800;
+}
+
+.avatar.photo {
+  border: 1px solid var(--line);
+  background: #ffffff;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .person-card p {
@@ -931,7 +938,12 @@ a {
   }
 
   .person-card {
-    grid-template-columns: 58px minmax(0, 1fr);
+    grid-template-columns: 92px minmax(0, 1fr);
+  }
+
+  .avatar {
+    width: 84px;
+    height: 104px;
   }
 
   .site-footer {
