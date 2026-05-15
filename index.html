@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap"
       rel="stylesheet"
     >
-    <link rel="stylesheet" href="styles.css?v=20260515b">
+    <link rel="stylesheet" href="styles.css?v=20260515c">
   </head>
   <body>
     <header class="site-header" data-header>
@@ -425,6 +425,7 @@
                   <h3>김민석</h3>
                   <span data-i18n data-en="Professor Lab · Hannuri Hall I508B" data-ko="교수님 연구실 · 한누리관 I508B">Professor Lab · Hannuri Hall I508B</span>
                   <em data-i18n data-en="AI methods and applied intelligent systems" data-ko="AI 방법론 및 응용 지능 시스템">AI methods and applied intelligent systems</em>
+                  <button class="profile-button" type="button" data-profile-open data-i18n data-en="More" data-ko="더보기">More</button>
                 </div>
               </article>
               <article class="person-card" data-people-group="graduate">
@@ -603,10 +604,56 @@
 
     </main>
 
+    <div class="profile-modal" data-profile-modal hidden>
+      <div class="profile-backdrop" data-profile-close></div>
+      <section class="profile-dialog" role="dialog" aria-modal="true" aria-labelledby="professor-profile-title">
+        <button class="profile-close" type="button" aria-label="Close profile" data-profile-close>×</button>
+        <div class="profile-dialog-header">
+          <p class="eyebrow">Faculty</p>
+          <h2 id="professor-profile-title">김민석</h2>
+          <p data-i18n data-en="Assistant Professor, Sangmyung University" data-ko="상명대학교 조교수">Assistant Professor, Sangmyung University</p>
+        </div>
+        <div class="profile-summary">
+          <div>
+            <span data-i18n data-en="Degree" data-ko="학위">Degree</span>
+            <strong data-i18n data-en="Ph.D." data-ko="박사">Ph.D.</strong>
+          </div>
+          <div>
+            <span data-i18n data-en="Office" data-ko="연구실">Office</span>
+            <strong data-i18n data-en="Hannuri Hall I508B" data-ko="한누리관 I508B">Hannuri Hall I508B</strong>
+          </div>
+          <div>
+            <span data-i18n data-en="Phone" data-ko="연락처">Phone</span>
+            <strong>041-550-5113</strong>
+          </div>
+        </div>
+        <div class="profile-detail-grid">
+          <section>
+            <h3 data-i18n data-en="Education" data-ko="학위">Education</h3>
+            <ul>
+              <li data-i18n data-en="Ph.D., Electrical & Computer Engineering, University of Massachusetts Lowell, 2016.05 · Reinforcement Learning" data-ko="박사, University of Massachusetts Lowell Electrical & Computer Engineering, 2016.05 · 세부전공: 강화학습">Ph.D., Electrical & Computer Engineering, University of Massachusetts Lowell, 2016.05 · Reinforcement Learning</li>
+              <li data-i18n data-en="M.S., Telecommunications, University of Pittsburgh, 2010.05 · Networks" data-ko="석사, University of Pittsburgh Telecommunications, 2010.05 · 세부전공: 네트워크">M.S., Telecommunications, University of Pittsburgh, 2010.05 · Networks</li>
+            </ul>
+          </section>
+          <section>
+            <h3 data-i18n data-en="Career" data-ko="경력">Career</h3>
+            <ul>
+              <li data-i18n data-en="Assistant Professor, Sangmyung University, 2020.03 - Present" data-ko="조교수, 상명대학교, 2020.03 - 현재">Assistant Professor, Sangmyung University, 2020.03 - Present</li>
+              <li data-i18n data-en="Editorial Board Member, Korea Multimedia Society, 2022.01 - Present" data-ko="편집위원, 한국멀티미디어학회, 2022.01 - 현재">Editorial Board Member, Korea Multimedia Society, 2022.01 - Present</li>
+              <li data-i18n data-en="Expert Committee Member, ICT International Standardization, 2018.01 - Present" data-ko="전문위원, ICT 국제표준화, 2018.01 - 현재">Expert Committee Member, ICT International Standardization, 2018.01 - Present</li>
+              <li data-i18n data-en="Senior Researcher, Electronics and Telecommunications Research Institute, 2016.11 - 2020.03" data-ko="선임연구원, 한국전자통신연구원, 2016.11 - 2020.03">Senior Researcher, Electronics and Telecommunications Research Institute, 2016.11 - 2020.03</li>
+              <li data-i18n data-en="Research Scientist, M Monitorings Inc. (USA), 2016.06 - 2016.10" data-ko="Research Scientist, M Monitorings Inc. (USA), 2016.06 - 2016.10">Research Scientist, M Monitorings Inc. (USA), 2016.06 - 2016.10</li>
+            </ul>
+          </section>
+        </div>
+        <a class="profile-source-link" href="https://hirobot.smu.ac.kr/hirobot/faculty/faculty.do?mode=view&empNo=11868166&pager.offset=0&pagerLimit=20" target="_blank" rel="noreferrer" data-i18n data-en="Official faculty page" data-ko="공식 교수 소개 페이지">Official faculty page</a>
+      </section>
+    </div>
+
     <footer class="site-footer">
       <p>© 2026 SMAI Lab, Sangmyung University. All rights reserved.</p>
     </footer>
 
-    <script src="script.js?v=20260515b"></script>
+    <script src="script.js?v=20260515c"></script>
   </body>
 </html>

@@ -9,8 +9,12 @@ const peopleFilters = document.querySelectorAll("[data-people-filter]");
 const peopleGroups = document.querySelectorAll("[data-people-group]");
 const languageButtons = document.querySelectorAll("[data-lang-button]");
 const translatedElements = document.querySelectorAll("[data-i18n]");
+const profileModal = document.querySelector("[data-profile-modal]");
+const profileOpenButtons = document.querySelectorAll("[data-profile-open]");
+const profileCloseButtons = document.querySelectorAll("[data-profile-close]");
 const viewNames = new Set(Array.from(viewSections, (section) => section.getAttribute("data-view")));
 const supportedLanguages = new Set(["en", "ko"]);
+let lastFocusedElement = null;
 
 toggle?.addEventListener("click", () => {
   const isOpen = nav.classList.toggle("is-open");
@@ -157,4 +161,42 @@ peopleFilters.forEach((button) => {
       group.hidden = selected !== "all" && selected !== category;
     });
   });
+});
+
+const openProfileModal = () => {
+  if (!profileModal) {
+    return;
+  }
+
+  lastFocusedElement = document.activeElement;
+  profileModal.hidden = false;
+  document.body.classList.add("has-profile-modal");
+  profileModal.querySelector(".profile-close")?.focus();
+};
+
+const closeProfileModal = () => {
+  if (!profileModal || profileModal.hidden) {
+    return;
+  }
+
+  profileModal.hidden = true;
+  document.body.classList.remove("has-profile-modal");
+
+  if (lastFocusedElement instanceof HTMLElement) {
+    lastFocusedElement.focus();
+  }
+};
+
+profileOpenButtons.forEach((button) => {
+  button.addEventListener("click", openProfileModal);
+});
+
+profileCloseButtons.forEach((button) => {
+  button.addEventListener("click", closeProfileModal);
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeProfileModal();
+  }
 });
