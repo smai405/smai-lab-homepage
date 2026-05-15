@@ -59,18 +59,14 @@ a {
   min-width: 0;
 }
 
-.brand-symbol {
-  display: grid;
-  width: 72px;
+.brand-mark {
+  width: 40px;
   height: 40px;
   flex: 0 0 auto;
-  place-items: center;
-  border: 1px solid #1f4e79;
+  border: 1px solid var(--line);
   border-radius: 4px;
   background: #ffffff;
-  color: var(--blue);
-  font-size: 0.92rem;
-  font-weight: 800;
+  object-fit: cover;
 }
 
 .brand strong,
@@ -1035,12 +1031,6 @@ body.has-profile-modal {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-  }
-
-  .brand-symbol {
-    width: 62px;
-    height: 34px;
-    font-size: 0.78rem;
   }
 
   .brand small {
