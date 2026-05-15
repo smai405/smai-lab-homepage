@@ -441,7 +441,7 @@ a {
 }
 
 .research-card h3 {
-  align-self: end;
+  align-self: center;
   margin: 0 0 30px;
   font-size: 1.42rem;
 }
