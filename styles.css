@@ -210,6 +210,19 @@ a {
   line-height: 1.78;
 }
 
+.hero p.hero-notice {
+  display: inline-flex;
+  max-width: 100%;
+  margin-top: 22px;
+  border-left: 4px solid var(--blue);
+  padding: 10px 14px;
+  background: #f2f6fa;
+  color: var(--blue);
+  font-size: 0.98rem;
+  font-weight: 800;
+  line-height: 1.55;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
